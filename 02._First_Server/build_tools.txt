@@ -1,0 +1,17 @@
+Build tools
+Examples: maven, gradle, ant, make, nuget, cargo, gem
+
+
+Java            node.js
+--------        ---------
+
+maven           npm, pnpm, yarn         -> Package manager
+
+pom.xml         package.json            -> Entry point (definerer alt om vores projekt, første skridt til at forstå)
+
+meta            meta                    -> meta informationer, artefakter, versionsnummer, osv
+dependencies    dependencies
+life cycles     scripts                 ->
+
+----------------------------
+npm -> Express (ikke et framework selvom der står at det er et framework?) Semantic versioning.
