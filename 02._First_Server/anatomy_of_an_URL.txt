@@ -1,0 +1,14 @@
+
+protocol    domain      endpoint
+https://www.google.com/search?hl=en&q=search&zx=my%20search
+        subdomain  top-level domain
+
+        pathvariable
+/search/1
+
+    query string
+/search?hl=en&q=search&zx=my%20search
+        query parameter
+
+                                   # -> Fragment
+https://en.wikipedia.org/wiki/REST#History
