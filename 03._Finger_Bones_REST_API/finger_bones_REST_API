@@ -1,0 +1,7 @@
+
+
+Endpoints           HTTP Verb
+
+/fingerbones        GET
+/fingerbones/{id}   GET
+/fingerbones/{}
