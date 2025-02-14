@@ -49,8 +49,12 @@ app.post("/favoritepoliticians", (req, res) => {
 // Hvordan sender man data med en body? Gør det i fritiden
 
 app.post("/senddata", (req, res) => {
-    res.send({ data: "blabla"}) // I gamle dage skulle man sende som JSON med res.sjon, men send kan selv konvertere til json, og sætte de rigtige headers.
-})
+  res.send({ data: "blabla" }); // I gamle dage skulle man sende som JSON med res.sjon, men send kan selv konvertere til json, og sætte de rigtige headers.
+});
+
+app.get("/welcomepage", (req, res) => {
+  res.sendFile(__dirname + "/index.html"); // tager imod en absolute path
+});
 
 // Hvorfor er det ikke et REST API?
 // Følger ikke korrekt navngivning bl.a.
