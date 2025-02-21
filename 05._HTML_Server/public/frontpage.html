@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- 3. external css file -->
+      <link rel="stylesheet" href="./frontpage.css">
+
+     <!-- 2. styletag -->
+    <style>
+        #frontpage-header {
+            color: red;
+        }
+        /* .headers {
+            background-color: pink; 
+        } */
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="frontpage-header" class="headers">Frontpage</h1>
+         <!-- 1. inline css -->
+
+    <h2 class="headers" style="color: rebeccapurple">Welcome users!</h2>
+    <div id="visitorcounts"></div>
+    
+
+</body>
+<script>
+    fetch("/visitorcounts")
+    .then((response) => response.json())
+    .then((result) => { 
+        const visitorCountDiv= document.getElementById("visitorcount");
+        // visitorCountDiv.innerHTML
+        // Brug ikke innerHTML da man kan lave "cross eyed scripting" på det!
+        visitorCountDiv.textContent = result.data;
+});
+</script>
+</html>
