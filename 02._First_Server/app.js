@@ -56,6 +56,10 @@ app.get("/welcomepage", (req, res) => {
   res.sendFile(__dirname + "/index.html"); // tager imod en absolute path
 });
 
+app.get("/redirect", (req, res) => {
+  res.redirect("/favoritethings/tulip/sea lion");
+});
+
 // Hvorfor er det ikke et REST API?
 // Følger ikke korrekt navngivning bl.a.
 

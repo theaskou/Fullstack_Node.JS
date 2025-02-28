@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- 3. external css file -->
-      <link rel="stylesheet" href="./frontpage.css">
+      <link rel="stylesheet" href="./frontpage/frontpage.css">
 
      <!-- 2. styletag -->
     <style>
@@ -24,8 +24,21 @@
     <h2 class="headers" style="color: rebeccapurple">Welcome users!</h2>
     <div id="visitorcounts"></div>
     
+    <!--Redirect to the party page-->
+
+    <a href="/partypage">party page</a>
 
 </body>
+<script src="./frontpage.js"></script>
+
+<!--
+<script>
+    setTimeout(() => {
+    window.location.replace ("/partypage");
+  }, 3000);
+</script>
+-->
+
 <script>
     fetch("/visitorcounts")
     .then((response) => response.json())

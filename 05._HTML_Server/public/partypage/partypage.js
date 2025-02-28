@@ -1,0 +1,1 @@
+import partyFactory from './partyFactory.js';

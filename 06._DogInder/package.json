@@ -1,0 +1,31 @@
+{
+  "name": "doginder",
+  "version": "0.0.1",
+  "description": "Tinder for Indian Dogs",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theaskou/Fullstack_Node.JS.git"
+  },
+  "keywords": [
+    "tinder",
+    "dogs",
+    "dog",
+    "indian",
+    "match-making",
+    "love"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theaskou/Fullstack_Node.JS/issues"
+  },
+  "homepage": "https://github.com/theaskou/Fullstack_Node.JS#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
