@@ -1,0 +1,13 @@
+body {
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+#dog-matches-image {
+    max-height: 40vh;
+}
